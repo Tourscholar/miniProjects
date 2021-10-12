@@ -1,0 +1,75 @@
+* {
+  /* 清除全局margin和padding */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-flow: row nowrap;
+  /* 主轴元素居中排列 */
+  justify-content: center;
+  /* 副轴元素居中排列 */
+  align-items: center;
+  /* viewport 视口高度 */
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 90vw;
+}
+
+.panel {
+  /* 按比例显示将图片覆盖整个盒子 */
+  background-size: cover;
+  /* 图片居中显示 */
+  background-position: center;
+  height: 80vh;
+  border-radius: 50px;
+  color: white;
+  /* 设置鼠标为小手状 */
+  cursor: pointer;
+  /* 每个盒子各占一份 */
+  flex: 1;
+  margin: 0 10px;
+  /* 子绝父相 */
+  position: relative;
+  /* 给盒子添加动画 */
+  transition: all 0.7s ease-in 0s;
+}
+
+.panel h3 {
+  font-size: 24px;
+  /* 绝对定位 */
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  /* 透明度 */
+  opacity: 0;
+}
+
+.active {
+    /* 第一个盒子默认展开 */
+    flex: 8;
+}
+.active h3{
+    opacity: 1;
+    /* 给文字添加动画 */
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+/* 如果屏幕宽度小于480px */
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+    /* 第四个panel和第五个panel不显示 */
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+}
