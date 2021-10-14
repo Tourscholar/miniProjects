@@ -32,6 +32,8 @@ body {
   position: relative;
 }
 
+
+/* 通过伪元素定义灰色的底线 */
 .progress-container::before {
   content: "";
   background-color: var(--line-border-empty);
