@@ -1,4 +1,5 @@
 :root {
+  /* 使用root伪类 声明全局css变量 */
   --line-border-fill: #3498db;
   --line-border-empty: #e0e0e0;
 }
@@ -14,21 +15,27 @@ body {
   background-color: #f6f7f6;
   font-family: sans-serif;
   display: flex;
+  /* 主轴元素居中 */
   justify-content: center;
+  /* 副轴元素居中 */
   align-items: center;
+  /* 视口高度100% */
   height: 100vh;
 }
 
 .container {
+  /* 文字居中 */
   text-align: center;
 }
 
 .progress-container {
   display: flex;
+  /* 两端对齐, 项目之间的间隔都相等 */
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
   width: 350px;
+  /* 子绝父相 */
   position: relative;
 }
 
@@ -85,10 +92,12 @@ body {
 }
 
 .btn:active {
+  /* 鼠标点击后缩小为原来的98% */
   transform: scale(0.98);
 }
 
 .btn:focus {
+  /* 清除按钮轮廓 */
   outline: 0;
 }
 
