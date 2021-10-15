@@ -1,0 +1,149 @@
+* {
+  /* 清除全局margin和padding */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* 设置字体 */
+  font-family: sans-serif;
+  /* 最下层的底色 */
+  background-color: #333;
+}
+
+.container {
+  background-color: #fafafa;
+  width: 100vw;
+  padding: 50px;
+  min-height: 100vh;
+  /* 设置旋转中心为左上角 */
+  transform-origin: top left;
+  transition: transform 0.3s linear 0s;
+}
+
+.container.show-nav {
+  /* 逆时针旋转20度 */
+  transform: rotate(-20deg);
+}
+.circle {
+  background-color: #ff7979;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* 子绝父相 */
+  position: relative;
+  transition: transform 0.3s ease-in 0s;
+}
+
+.container.show-nav .circle {
+  /* 绕圆心顺时针旋转70度 */
+  transform: rotate(-70deg);
+}
+.circle button {
+  /* 鼠标改为小手状 */
+  cursor: pointer;
+  /* 绝对定位 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  /* 背景颜色为透明 */
+  background-color: transparent;
+  height: 100px;
+  font-size: 25px;
+  border: 0;
+}
+
+.circle-container {
+  position: fixed;
+  /* 1/4圆 */
+  top: -100px;
+  left: -100px;
+}
+
+.circle button#open {
+  left: 60%;
+}
+
+.circle button#close {
+  top: 60%;
+  /* 设置旋转中心为左上角 */
+  transform-origin: top left;
+  /* 角度为正, 顺时针旋转九十度 即1/4圆 */
+  transform: rotate(90deg);
+  /* transition: transform 1s linear 0.1s; */
+}
+
+.content {
+  max-width: 1000px;
+  /* 上下边距50px, 居中 */
+  margin: 50px auto;
+}
+
+.content p {
+  color: #333;
+  /* 设置1.5倍行间距 */
+  line-height: 1.5;
+}
+
+/* 作者名字 */
+.content small {
+  color: #555;
+  /* 斜体 */
+  font-style: italic;
+}
+
+.content h3 {
+  margin: 20px 0;
+}
+
+.content img {
+  /* 图片最大显示值 */
+  max-width: 100%;
+}
+
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+}
+
+.container.show-nav + nav li {
+  transform: translate(0);
+  transition-delay: 0.3s;
+}
+nav ul {
+  /* 清澈ul标签下的小圆点 */
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+nav ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+nav ul li {
+  /* 将文本显示为全大写 */
+  text-transform: uppercase;
+  margin: 40px 0;
+  color: white;
+  /* 向左移动一个自己的宽度 */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in 0s;
+}
+
+nav li:nth-child(2) {
+  /* 第二个元素 */
+  margin-left: 15px;
+  /* 因为设置有margin-left, 因此需要移动更多距离 */
+  transform: translateX(-150%);
+}
+
+nav li:nth-child(3) {
+  /* 第三个元素 */
+  margin-left: 30px;
+  /* 因为设置有margin-left, 因此需要移动更多距离 */
+  transform: translateX(-200%);
+}
