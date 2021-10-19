@@ -1,0 +1,36 @@
+* {
+  /* 清除全局margin和padding */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* 隐藏大于浏览器宽高部分的图片 */
+  overflow: hidden;
+}
+
+.bg {
+  /* 图片不重复 图片完全占满盒子 */
+  background: url(./ocean.jpg) no-repeat center/cover;
+  /* 清除白边 */
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  /* 使图片脱离标准流 */
+  position: absolute;
+  /* 使图片处于文字下方 */
+  z-index: -1;
+  /* top: -30px; */
+  /* left: -30px; */
+}
+
+.loading-text {
+  font-size: 50px;
+  color: #fff;
+}
+
