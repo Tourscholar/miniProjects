@@ -8,3 +8,4 @@ miniProjects only use HTML/CSS and JavaScript
 | 03 | 旋转网页 |[Rotating Navigation Animation](https://github.com/Tourscholar/miniProjects/tree/master/rotatingNavigationAnimation) |
 | 04 | 搜索框隐藏动画 |[Hidden Search Widget](https://github.com/Tourscholar/miniProjects/tree/master/hiddenSearchWidget) |
 | 05 | 模糊加载 |[Blurry Loading](https://github.com/Tourscholar/miniProjects/tree/master/blurryLoading) |
+| 06 | 滚轮滑动动画 |[Scroll Animation](https://github.com/Tourscholar/miniProjects/tree/master/scrollAnimation) |
