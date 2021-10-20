@@ -1,0 +1,52 @@
+* {
+  /* 清除全局margin和padding */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efedd6;
+  font-family: sans-serif;
+  display: flex;
+  /* 以纵轴为主轴 */
+  flex-direction: column;
+  /* 水平居中 */
+  align-items: center;
+}
+
+h1 {
+  margin: 10px;
+}
+
+.box {
+  background-color: steelblue;
+  color: white;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 10px;
+  /* 文字水平居中 */
+  text-align: center;
+  /* 文字垂直居中 */
+  line-height: 200px;
+  /* 添加阴影效果 */
+  /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影颜色 */
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease-in 0s;
+}
+
+/* 偶数向左移动 */
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+/* 将所有h2标签复原 */
+.box.show {
+    transform: translateX(0);
+}
+
+.box h2 {
+    font-size: 45px
+}
