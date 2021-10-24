@@ -1,0 +1,117 @@
+* {
+  /* 清除全局margin和padding */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: steelblue;
+  /* 改变文字颜色 */
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  /* 元素水平居中 */
+  justify-content: center;
+  /* 元素垂直居中 */
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  /* 设置黑色透明背景 */
+  background-color: rgb(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  /* 设置圆角 */
+  border-radius: 5px;
+}
+
+.container h1 {
+  /* 文字居中 */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.btn {
+  /* 鼠标小手状 */
+  cursor: pointer;
+  width: 100%;
+  background-color: lightblue;
+  padding: 15px;
+  border: 0;
+  font-size: 16px;
+  /* inherit使得子元素继承父元素的属性 */
+  font-family: inherit;
+}
+
+.btn:focus {
+  /* 去掉鼠标点击按钮时的外边距 */
+  outline: 0;
+}
+
+.btn:active {
+  /* 点击时的缩放效果 */
+  transform: scale(0.98);
+}
+
+.container a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+.text {
+  margin-top: 30px;
+}
+
+.form-control {
+  width: 300px;
+  /* 上边20px, 左边右边0, 下边40px */
+  margin: 20px 0 40px;
+  /* 子绝父相 */
+  position: relative;
+}
+
+.form-control input {
+  /* 设置输入框为透明 */
+  background-color: transparent;
+  /* 去掉边框 */
+  border: 0;
+  border-bottom: 2px solid white;
+  /* 行内元素改为块级元素 */
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.form-control input:focus {
+  outline: 0;
+  /* 当点击表单进行文本输入时变为浅蓝色 */
+  border-bottom-color: lightblue;
+}
+
+.form-control input:valid {
+  /* 当表单中有有效输入时 */
+  border-bottom-color: lightblue;
+}
+
+.form-control label {
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.form-control label span {
+  /* 变为行内块 */
+  display: inline-block;
+  font-size: 18px;
+  transition: all 0.3s cubic-bezier(.96,0,0,.99) 0s;
+}
+
+/* CSS加号选择器 如果第一个元素存在则对除第一个元素以外的兄弟元素起作用 */
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  transform: translateY(-30px);
+  color: lightblue;
+}
