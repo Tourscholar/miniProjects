@@ -11,3 +11,4 @@ miniProjects only use HTML/CSS and JavaScript
 | 06 | 滚轮滑动动画 |[Scroll Animation](https://github.com/Tourscholar/miniProjects/tree/master/scrollAnimation) |
 | 07 | 动态滑动页面 |[Split Landing Page](https://github.com/Tourscholar/miniProjects/tree/master/splitLandingPage) |
 | 08 | 波浪登录界面 |[Form Wave](https://github.com/Tourscholar/miniProjects/tree/master/formWave) |
+| 09 | 音效控制面板 |[Form Wave](https://github.com/Tourscholar/miniProjects/tree/master/soundBoard) |
