@@ -1,0 +1,127 @@
+* {
+  /* 清除全局margin和padding */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+body {
+  background-color: #f1f1f7;
+  display: flex;
+  justify-content: center;
+  /* 主轴为纵轴 */
+  flex-direction: column;
+  /* 子元素水平居中 */
+  align-items: center;
+  height: 100vh;
+}
+
+.keyboard {
+  /* 让文字无法被选中 */
+  user-select: none;
+  /* 鼠标变成小手状 */
+  cursor: pointer;
+}
+
+.keys {
+  display: flex;
+  /* 去掉li标签的圆点 */
+  list-style: none;
+}
+
+li {
+  /* 给li标签加一点阴影 */
+  box-shadow: 0 -6px 10px rgba(255, 255, 255), 0 4px 15px rgba(0, 0, 0, 0.3);
+  height: 5rem;
+  width: 6rem;
+  font-size: 1rem;
+  margin: 0.3rem;
+  background-color: #f2f2f2;
+  /* 圆角 */
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  /* 文字水平居中 */
+  text-align: center;
+  /* 文字垂直居中 */
+  line-height: 5rem;
+  /* 让键帽里面的字母保持一点距离 */
+  letter-spacing: 2px;
+  /* 添加动画 */
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+}
+
+li:active {
+  /* 点击后出现阴影 */
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .15);
+  color: rgba(12, 164, 190);
+  text-shadow: 0 0 15px #57c1f1;
+}
+
+.keys.one {
+  color: #eb3f33;
+}
+
+.keys.two {
+  color: #df960e;
+}
+
+.keys.three {
+  color: #2b46df;
+}
+
+.keys.four {
+  color: aqua;
+}
+
+.keys.five {
+  color: #8919ca;
+}
+
+.keys.six {
+  color: #e73d09;
+}
+
+.Esc {
+  width: 10rem;
+}
+
+.back {
+  width: 10.1rem;
+}
+
+.Tab {
+  width: 10rem;
+}
+
+.Caps {
+  width: 11rem;
+}
+
+.Enter {
+  width: 11.5rem;
+}
+
+.Shift {
+  width: 14.6rem;
+}
+
+.ctrl,
+.win,
+.alt,
+.book {
+  width: 9.5rem;
+}
+
+.space {
+  width: 35.6rem;
+}
