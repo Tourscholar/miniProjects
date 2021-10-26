@@ -1,0 +1,44 @@
+* {
+  /* 清除全局margin和padding */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e1e1e1;
+  font-family: sans-serif;
+  display: flex;
+  height: 100vh;
+  /* 水平居中 */
+  justify-content: center;
+  /* 垂直居中 */
+  align-items: center;
+}
+
+.key {
+  border: 1px solid #999;
+  background-color: #eee;
+  /* 添加阴影效果 */
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-size: 20px;
+  /* 字体加粗 */
+  font-weight: bold;
+  /* 行内弹性盒子 */
+  display: inline-flex;
+  /* 主轴为纵轴 */
+  flex-direction: column;
+  align-items: center;
+  min-width: 150px;
+  /* 子绝父相 */
+  position: relative;
+}
+
+.key small {
+  font-size: 14px;
+  color: #555;
+  /* 绝对定位 */
+  position: absolute;
+  top: 75px;
+}
