@@ -13,3 +13,4 @@ miniProjects only use HTML/CSS and JavaScript
 | 08 | 波浪登录界面 |[Form Wave](https://github.com/Tourscholar/miniProjects/tree/master/formWave) |
 | 09 | 音效控制面板 |[Form Wave](https://github.com/Tourscholar/miniProjects/tree/master/soundBoard) |
 | 10 | 实时显示键盘和键码 |[Event Keycodes](https://github.com/Tourscholar/miniProjects/tree/master/eventKeycodes) |
+| 11 | 炫酷的键盘 |[Key Board](https://github.com/Tourscholar/miniProjects/tree/master/keyBoard) |
