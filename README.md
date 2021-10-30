@@ -15,3 +15,4 @@ miniProjects only use HTML/CSS and JavaScript
 | 10 | 实时显示键盘和键码 |[Event Keycodes](https://github.com/Tourscholar/miniProjects/tree/master/eventKeycodes) |
 | 11 | 炫酷的键盘 |[Key Board](https://github.com/Tourscholar/miniProjects/tree/master/keyBoard) |
 | 12 | 创意导航栏 |[Animated Navigation](https://github.com/Tourscholar/miniProjects/tree/master/animatedNavigation) |
+| 13 | 随机选择器 |[Form Wave](https://github.com/Tourscholar/miniProjects/tree/master/randomChoicePicker) |
